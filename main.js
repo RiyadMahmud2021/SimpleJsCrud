@@ -1,6 +1,6 @@
 let form = document.getElementById("form");
 let input = document.getElementById("text_area");
-let msg = document.getElementById("msg");
+let msg = document.getElementById("vld_msg");
 
 form.addEventListener("submit", (e) => {
      e.preventDefault();
@@ -65,7 +65,7 @@ let editPost = (e) => {
      if(input.value = e.parentElement.previousElementSibling.innerHTML ){
           e.parentElement.parentElement.remove();
      } 
-     // no need new page for edit, event took us to the unput field  
+     // no need new page for edit, event took us to the input field  
      // it updates new edited post 
      // it deletes past post 
 }
